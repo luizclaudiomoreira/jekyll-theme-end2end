@@ -12,6 +12,13 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
 
-  spec.add_runtime_dependency     'jekyll',  '>= 4.2'
-  spec.add_development_dependency 'bundler', '>= 2.0'
+  spec.add_runtime_dependency     'jekyll', '>= 3.6', '< 5.0'
+  spec.add_runtime_dependency     'bourbon'
+  spec.add_runtime_dependency     'kramdown'
+  spec.add_runtime_dependency     'jekyll-feed'
+  spec.add_runtime_dependency     'pygments.rb'
+  spec.add_runtime_dependency     'jekyll-compose'
+  spec.add_runtime_dependency     'jekyll-paginate-v2'
+
+  spec.add_development_dependency 'bundler', '~> 2.1'
 end
