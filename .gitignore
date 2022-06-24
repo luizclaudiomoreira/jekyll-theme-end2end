@@ -1,4 +1,7 @@
+*.md
 *.gem
+*.xml
+*.yml
 *.html
 .bundle
 .jekyll-cache
@@ -6,8 +9,9 @@
 _site
 _posts
 Gemfile.lock
-404.*
-index.*
-feed.xml
-about.*
-_config.yml
+
+!/_data/*
+!/_sass/*
+!/assets/*
+!/_layouts/*
+!/_includes/*
