@@ -1,6 +1,34 @@
-# end2end Clean Jekyll theme [![Build Status](https://travis-ci.org/nandomoreirame/end2end.svg?branch=master)](https://travis-ci.org/nandomoreirame/end2end)
+# jekyll-theme-end2end
 
+That's a theme based on ["end2end"](https://github.com/nandomoreirame/end2end)
 
+## Installation
+
+Add this line to your Jekyll site's `Gemfile`:
+
+```ruby
+gem "jekyll-theme-end2end", git: "https://github.com/luizclaudiomoreira/jekyll-theme-end2end"
+```
+
+And add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+theme: jekyll-theme-end2end
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install jekyll-theme-end2end
+
+## Usage
+
+It follows the best practices on [Jekyll's docs](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes)
+
+## Features
 
 * [x] Clean layout
 * [x] Resposive layout
@@ -13,45 +41,19 @@
 * [ ] Search posts
 * [ ] Share posts
 
----
+## Contributing
 
-### Start in 4 steps
+Bug reports and pull requests are welcome on this [repository](https://github.com/luizclaudiomoreira/jekyll-theme-end2end/issues/new). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-1. Download or clone repo `git clone git@github.com:nandomoreirame/end2end.git`
-2. Enter the folder: `cd end2end/`
-3. Install Ruby gems: `bundle install`
-4. Start Jekyll server: `bundle exec jekyll serve`
+## Development
 
-Access, [localhost:4000/end2end](http://localhost:4000/end2end)
+To set up your environment to develop this theme, run `bundle install`.
 
-### Deploy in Github pages in 2 steps
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
-1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
-2. Run `rake` or `rake publish` for build and publish on Github
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-lcm.gemspec` accordingly.
 
----
+## License
 
-### Using Rake tasks
-
-* Create a new page: `rake page name="contact.md"`
-* Create a new post: `rake post title="TITLE OF THE POST"`
-
----
-
-### Demo and Download
-
-[Demo](https://nandomoreirame.github.io/end2end/)
-[Download](https://github.com/nandomoreirame/end2end/archive/master.zip)
-
-![end2end - free Jekyll theme](/screenshot.png)
-
----
-
-### Copyright and license
-
-It is under [the MIT license](/LICENSE).
-
-> :warning:
-  Please remove metas `<meta name="robots" content="noindex">` and `<meta name="googlebot" content="noindex">` in `source/_layouts/default.html`
-
-Enjoy :yum:
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
